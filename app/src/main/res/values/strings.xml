@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">SIDED</string>
     <string name="textViewBemVindo">Bem vindo ao Sistema de Estudos - SIDED</string>
+    <string name="hintDigiteSeuEmail">Digite seu e-mail</string>
+    <string name="hintDigiteSuaSenha">Digite sua senha</string>
     <string name="buttonAcessar">Acessar</string>
     <string name="buttonLimpar">Limpar</string>
+    <string name="erroAutenticacao">Usuário ou senha inválidos.</string>
 </resources>
