@@ -22,39 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
-            android:layout_alignParentEnd="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentRight="false"
-            android:layout_alignParentStart="false"
-            android:layout_alignWithParentIfMissing="false"
-            android:layout_centerHorizontal="false"
-            android:layout_centerInParent="false"
-            android:layout_alignParentTop="true">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/sided"
-                android:id="@+id/imageView8" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="11dp"
-                android:id="@+id/textViewBemVindo"
-                android:text="@string/textViewBemVindo"
-                android:gravity="center"
-                android:layout_below="@+id/imageViewBemVindo"
-                android:layout_alignParentStart="true"
-                android:fontFamily="casual" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1"
             android:layout_alignParentStart="false"
             android:layout_centerVertical="false"
             android:layout_alignParentTop="false"
@@ -136,6 +103,35 @@
                 android:layout_weight="1"
                 android:elevation="0dp"
                 android:background="@android:drawable/dialog_holo_light_frame" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="75dp"
+                app:srcCompat="@mipmap/sided"
+                android:id="@+id/imageView8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
+                android:id="@+id/textViewBemVindo"
+                android:text="@string/textViewBemVindo"
+                android:gravity="center"
+                android:layout_below="@+id/imageViewBemVindo"
+                android:layout_alignParentStart="true"
+                android:fontFamily="casual" />
 
         </LinearLayout>
 
