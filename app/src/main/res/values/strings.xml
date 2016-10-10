@@ -6,4 +6,20 @@
     <string name="buttonAcessar">Acessar</string>
     <string name="buttonLimpar">Limpar</string>
     <string name="erroAutenticacao">Usuário ou senha inválidos.</string>
+
+    <string name="textViewCadastro">Cadastro do Aluno</string>
+    <string name="hintCadNome">Nome</string>
+    <string name="hintCadMatricula">Matrícula</string>
+    <string name="hintCadMatEmail">E-mail</string>
+    <string name="hintCadMatConta">Conta GitHub</string>
+    <string name="buttonCadCadastrar">Cadastrar</string>
+
+    <string-array name="lista_cursos">
+        <item>Processo e qualidade de software</item>
+        <item>Sistemas Operacionais II</item>
+        <item>Desenvolvimento para dispositivos móveis</item>
+        <item>Projeto Integrador I</item>
+        <item>Teste de Software</item>
+        <item>Linguagem de programação IV</item>
+    </string-array>
 </resources>

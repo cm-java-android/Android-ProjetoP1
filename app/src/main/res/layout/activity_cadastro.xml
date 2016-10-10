@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_cadastro"
     android:layout_width="match_parent"
@@ -9,5 +10,126 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="android.ucam.aula.projeto.projetop1.CadastroActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:id="@+id/imageView"
+                android:layout_weight="1"
+                android:scaleType="center" />
+
+            <TextView
+                android:text="@string/textViewCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCadastro"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextCadNome"
+                android:hint="@string/hintCadNome"
+                android:fontFamily="casual"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextCadMatricula"
+                android:hint="@string/hintCadMatricula"
+                android:fontFamily="casual"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editTextCadEmail"
+                android:hint="@string/hintCadMatEmail"
+                android:fontFamily="casual"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextCadConta"
+                android:hint="@string/hintCadMatConta"
+                android:fontFamily="casual"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCursos"
+                android:entries="@array/lista_cursos" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCadCadastrar"
+                android:text="@string/buttonCadCadastrar"
+                android:layout_width="wrap_content"
+                android:width="1dp"
+                android:elevation="0dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCadLimpar"
+                android:text="@string/buttonLimpar"
+                android:width="1dp"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:background="@android:drawable/dialog_holo_light_frame" />
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
