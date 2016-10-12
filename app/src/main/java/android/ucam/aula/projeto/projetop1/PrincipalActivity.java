@@ -33,7 +33,7 @@ public class PrincipalActivity extends AppCompatActivity {
             public void onClick(View v){
                 if(email.getText().toString().equalsIgnoreCase("admin@admin.com") && senha.getText().toString().equalsIgnoreCase("12345"))
                 {
-                    Intent trocadorTela = new Intent(PrincipalActivity.this, CadastroActivity.class);
+                    Intent trocadorTela = new Intent(PrincipalActivity.this, TarefaActivity.class);
                     startActivity(trocadorTela);
                 }else{
                     resultado.setText("Usuário ou senha inválidos.");

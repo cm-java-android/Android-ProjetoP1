@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -26,6 +27,12 @@ public class CadastroActivity extends AppCompatActivity {
         contaGit = (EditText) findViewById(R.id.editTextCadConta);
         cadastrar = (Button) findViewById(R.id.buttonCadCadastrar);
         limpar = (Button) findViewById(R.id.buttonCadLimpar);
+
+        cadastrar.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Toast.makeText(getApplicationContext(), "Cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         limpar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
